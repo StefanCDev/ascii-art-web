@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+            
+            
+    background-size: cover;
+    background-image: url("https://wallpapercave.com/wp/wp3445065.jpg");
+       height: 100vh;
+       width: 100vw;
+      }
+        .input[type="submit"]   {             
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+        }
+        .result{
+              height: 70vh;
+              width: 80%;
+        }
+        .footer{
+            position: fixed; 
+            left: 0; 
+            bottom: 0; 
+            width: 100%; 
+            color: white; 
+            text-align: center;
+        }
+</style>
+        }
+                      </style>
+</head>
+<body>
+      <h1>ASCII-ART-WEB</h1>
+        <p>ascii art converter</p>
+        <p></p>
+        <form text-align: center; action="/ascii-art" method="POST">
+              
+              <label for="box"></label>
+              <textarea  rows="6" cols="40" name="box" required id="box" placeholder="type something"></textarea>
+              <input type="submit" value="SUBMIT">
+              
+              <label for="fonter">Choose font file:</label>
+              <select name="font-files" id="fonter">
+  <option value="standard">standard</option>
+  <option value="shadow">shadow</option>
+  <option value="thinkertoy">thinkertoy</option>
+              </select>
+        </form>   
+       
+        <div class="result"><pre style="color:purple">{{.}}</pre></div>
+        <div>
+            <p class="footer">This project has been created by Lotfi and Stefan</p>
+          </div>
+    
+</body>
+<!-- <footer>whatever the F*** u Want</footer> -->
+</html>
